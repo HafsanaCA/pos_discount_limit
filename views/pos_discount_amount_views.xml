@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="view_deducted_discount_amount_form" model="ir.ui.view">
+        <field name="name">pos.session.form.inherit.discount.amount</field>
+        <field name="model">pos.session</field>
+        <field name="inherit_id" ref="point_of_sale.view_pos_session_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//group" position="inside">
+                <field name="allow_discount_control" invisible="1"/>
+                <field name="max_allowed_discount" readonly="1"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

@@ -6,7 +6,6 @@
     'depends': ['base','point_of_sale'],
     'data': [
             'views/res_config_settings_views.xml',
-            'views/pos_discount_amount_views.xml',
     ],
     'assets': {
         'point_of_sale._assets_pos': [
